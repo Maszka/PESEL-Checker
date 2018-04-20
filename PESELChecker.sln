@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PESELChecker", "PESELChecker\PESELChecker.csproj", "{673B6022-1DAD-452B-A5C4-1F61FF948878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{673B6022-1DAD-452B-A5C4-1F61FF948878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673B6022-1DAD-452B-A5C4-1F61FF948878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673B6022-1DAD-452B-A5C4-1F61FF948878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673B6022-1DAD-452B-A5C4-1F61FF948878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
