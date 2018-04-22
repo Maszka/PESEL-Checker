@@ -3,11 +3,12 @@ namespace PESELChecker
 {
     public class Bday
     {
-        public int[] BdayToArray(string input)
+        public int[] BdayToArray(string argInput)
         {
             char[] delimiterChars = { '.', '/', '-' };
-            string[] dateOriginal = input.Split(delimiterChars);
+            string[] dateOriginal = argInput.Split(delimiterChars);
             int[] digits = new int[8];
+            int[] orderedDigits = new int[6];
             int x = 0;
             for (int i = 0; i < dateOriginal.Length; i++)
             {
@@ -18,7 +19,14 @@ namespace PESELChecker
                 }
             }
 
-            return digits;
+            orderedDigits[0] = digits[6];
+            orderedDigits[1] = digits[7];
+            orderedDigits[2] = digits[2];
+            orderedDigits[3] = digits[3];
+            orderedDigits[4] = digits[0];
+            orderedDigits[5] = digits[1];
+
+            return orderedDigits;
         }
     }
 }

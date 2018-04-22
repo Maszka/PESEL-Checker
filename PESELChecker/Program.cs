@@ -16,18 +16,24 @@ namespace PESELChecker
             // - cyfra kontrolna
             // catch exceptions: no numeric values in PESEL, birthday before and after some date, gender not in correct format
 
-            Bday bday = new Bday();
+            try
+            {
+                Bday bday = new Bday();
+                PeselCorrectness correctness = new PeselCorrectness();
 
 
+                Console.WriteLine("Enter your date of birth (DD/MM/YYYY)");
+                int[] bdayArray = bday.BdayToArray(Console.ReadLine());
 
+                Console.WriteLine("Enter your gender (F/M)");
+                string gender = Console.ReadLine();
 
-            Console.WriteLine("Enter your date of birth (DD/MM/YYYY)");
-            int[] bdayArray = bday.BdayToArray(Console.ReadLine());
-
-            Console.WriteLine("Enter your gender (F/M)");
-            string gender = Console.ReadLine();
-
-            Console.WriteLine("Enter your PESEL number");
+                Console.WriteLine("Enter your PESEL number");
+                string pesel = Console.ReadLine();
+                correctness.CorrectnessChecinkg(bdayArray, gender, pesel);
+            } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

@@ -11,6 +11,7 @@ namespace PESELChecker
             }
 
             return c - '0';
+          
         }
     }
 }
