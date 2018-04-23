@@ -9,7 +9,6 @@ namespace PESELChecker
             {
                 throw new ArgumentException("Wrong format of birthday date");
             }
-
             return c - '0';
           
         }
