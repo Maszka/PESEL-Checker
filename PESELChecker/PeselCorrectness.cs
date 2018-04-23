@@ -70,11 +70,7 @@ namespace PESELChecker
                 int[] peselConverted = PeselConverter(argPesel);
                 bool z = true;
 
-                if(argGender.ToLower() != "f" && argGender.ToLower() != "m")
-                {
-                throw new ArgumentException("Gender is not in correct format. Enter F or M.");
-                }
-                else if (peselConverted[9] % 2 == 0 && argGender.ToLower() != "f")
+                if (peselConverted[9] % 2 == 0 && argGender.ToLower() != "f")
                 {
                     z = false;
                 }
