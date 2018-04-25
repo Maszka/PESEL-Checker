@@ -45,7 +45,7 @@ namespace PESELChecker
 
             catch (FormatException)
             {
-                throw new FormatException("Birdthday format not correct.");
+                throw new FormatException("Birthday format not correct.");
             }
 
             return orderedDigits;

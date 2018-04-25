@@ -6,28 +6,31 @@ namespace PESELChecker
 {
     public class PeselCorrectness
     {
-        public void CorrectnessChecinkg(int[] argBdayArray, string argGender, string argPesel)
+        public string CorrectnessChecinkg(int[] argBdayArray, string argGender, string argPesel)
         {
             bool _bdayComparing = BdayComparing(argBdayArray, argPesel);
-            bool _genderChecing = GenderChecing(argGender, argPesel);
+            bool _genderChecking = GenderChecing(argGender, argPesel);
             bool _controlNumberChecking = ControlNumberChecking(argPesel);
+            string result = "";
 
             if (!_bdayComparing)
             {
-                Console.WriteLine("PESEL incorrect. Birthday date comparison failed.");
+                result += "PESEL incorrect. Birthday date comparison failed;";
             }
-            if (!_genderChecing)
+            if (!_genderChecking)
             {
-                Console.WriteLine("PESEL incorrect. Gender comparison failed.");
+                result += "PESEL incorrect. Gender comparison failed;";
             }
             if (!_controlNumberChecking)
             {
-                Console.WriteLine("PESEL incorrect. Control number is wrong.");
+                result += "PESEL incorrect. Control number is wrong;";
             }
-            if (_bdayComparing&&_bdayComparing&&_controlNumberChecking)
+            if (_bdayComparing&&_genderChecking&&_controlNumberChecking)
             {
-                Console.WriteLine("PESEL correct!");
+                result += "PESEL correct!;";
             }
+
+            return result;
 
             }
 

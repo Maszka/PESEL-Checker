@@ -1,0 +1,8 @@
+54111835716;18/11/1954;m;PESEL correct!;
+76031415126;14/03/1976;f;PESEL correct!;
+52081754233;17/08/1952;f;PESEL incorrect. Gender comparison failed;
+57072883637;28/08/1957;f;PESEL incorrect. Birthday date comparison failed;PESEL incorrect. Gender comparison failed;
+71032326616;23/03/1991;f;PESEL incorrect. Birthday date comparison failed;PESEL incorrect. Gender comparison failed;PESEL incorrect. Control number is wrong;
+68122222852;22/12/1968;m;PESEL correct!;
+92082700628;27/08/1992;m;PESEL incorrect. Gender comparison failed;
+98040709543;07/04/1998;f;PESEL incorrect. Control number is wrong;
